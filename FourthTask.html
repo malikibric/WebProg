@@ -1,0 +1,82 @@
+<!--Create a form that will enable the user to enter all the information 
+!--that you put in your CV in the last lab. 
+Separate form parts by different sections (introduction, education, etc.). 
+Add a file upload option to add a CV image (accept .png, .jpeg, .jpg).-->
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset ="UTF-8">
+    <title>CV Information</title>
+</head>
+<body>
+<h1 style="color: green;text-align: center;">CV Data Entry form</h1>
+<hr>
+<fieldset>
+<legend>Personal information</legend>
+<form action="/submit-registration.php" method="POST">
+<label for="Full Name">Full Name:</label>
+<input type="email" id="Email" name="Email"><br><br>
+<label for="location">Location:</label>
+<input type="location" id="location" name="Location"><br><br>
+<label for="file">Upload Profile Picture:</label>
+<input type="file" id="file" name="Upload Profile Picture:"><br><br>
+<label for="feedback">Your feedback:</label><br>
+</fieldset>
+<fieldset>
+<legend>Introduction</legend>
+<textarea>
+</textarea><br>
+</fieldset>
+<fieldset>
+<legend>Skills</legend>
+<label>Select your skills:</label><br>
+<label>HTML</label><br>
+<input type="checkbox" id="checkbox" name="checkbox">
+<label>CSS</label><br>
+<input type="checkbox" id="checkbox" name="checkbox">
+<label>JavaScript</label><br>
+<input type="checkbox" id="checkbox" name="checkbox">
+<label>React</label><br>
+<input type="checkbox" id="checkbox" name="checkbox">
+<label>Node.js</label><br>
+<input type="checkbox" id="checkbox" name="checkbox">
+<label>Express</label><br>
+<input type="checkbox" id="checkbox" name="checkbox">
+<label>Git</label><br>
+<input type="checkbox" id="checkbox" name="checkbox">
+<label>Web Perfomance Optimization</label><br>
+</fieldset>
+<br></br>
+<fieldset>
+<legend>Experience</legend>
+<label>Current Position:</label>
+<input type="position" id="position" name="position"><br>
+<label>Describe your experience:</label><br>
+<textarea></textarea>
+</fieldset>
+
+<fieldset>
+<legend>Education & Certifications</legend>
+<label>Degree:</label>
+<select name="pets">
+<optgroup label="Degree">
+    <option value="High school">High School</option>
+    <option value="University">University</option>
+</optgroup><br>
+</select><br><br>
+<label>Certifications:</label><br>
+<textarea></textarea>
+</fieldset>
+<fieldset>
+<legend>Personal Projects</legend>
+    
+<label for="checkbox"><u><b>Sign up for the newsletter</b></u></label>
+</fieldset>
+<label for="ct"><i><b>Would you use this CV creator tool again?</b></i></label><br>
+<label for="Yes">Yes</label>
+<input type="radio" id="yes" name="choice" value="yes"><br>
+<label for="No">No</label>
+<input type="radio" id="no" name="choice" value="no">
+</form>
+</body>
